@@ -16,7 +16,7 @@ def get_filters():
         (str) month - name of the month to filter by, or "all" to apply no month filter
         (str) day - name of the day of week to filter by, or "all" to apply no day filter
     """
-    print('Hello! Let\'s explore some US bikeshare data - time to have some FUN!')
+    print('Hello! Let\'s explore some US bikeshare data - (2nd time.... ai yo) time to have some FUN!')
     # TO DO: get user input for city (chicago, new york city, washington). HINT: Use a while loop to handle invalid inputs
     while True:
         city = input('Would you like to see data for Chicago, New York City, or Washington? More data is coming up on the next release - stay tune!\n').lower()
@@ -201,11 +201,11 @@ def display_data(df):
     """
     # Initialize variables
     start_index = 0
-    end_index = 3
+    end_index = 5
     num_rows = df.shape[0]
 
     # Prompt the user if they want to see raw data
-    show_data = input("Would you like to see 3 lines of raw data? Enter 'yes' or 'no': ").lower()
+    show_data = input("Would you like to see 5 lines of raw data? Enter 'yes' or 'no': ").lower()
 
     while show_data == 'yes':
         # Check if there is more data to display
@@ -217,11 +217,11 @@ def display_data(df):
         print(df.iloc[start_index:end_index])
 
         # Update the indices for the next iteration
-        start_index += 3
-        end_index += 3
+        start_index += 5
+        end_index += 5
 
         # Prompt the user again
-        show_data = input("Would you like to see the next 3 lines of raw data? Enter 'yes' or 'no': ").lower()
+        show_data = input("Would you like to see the next 5 lines of raw data? Enter 'yes' or 'no': ").lower()
         
 
 def main():
